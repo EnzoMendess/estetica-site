@@ -1,0 +1,70 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f8f4f2;
+  color: #333;
+  text-align: center;
+}
+
+header {
+  background-color: #e8cfc1;
+  padding: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  margin-left: 20px;
+}
+
+nav a:hover {
+  color: #b5838d;
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  background-color: #b5838d;
+  color: white;
+  cursor: pointer;
+  border-radius: 20px;
+}
+
+.servicos {
+  padding: 40px;
+}
+
+.card {
+  background: white;
+  margin: 15px auto;
+  padding: 20px;
+  width: 200px;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.home {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 60px;
+  gap: 40px;
+}
+
+.home-texto {
+  flex: 1;
+}
+
+.home-imagem {
+  flex: 1;
+}
+
+.home-imagem img {
+  width: 100%;
+  border-radius: 20px;
+}
