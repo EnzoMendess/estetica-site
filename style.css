@@ -65,6 +65,80 @@ button {
 }
 
 .home-imagem img {
-  width: 100%;
+  width: 50%;
   border-radius: 20px;
+}
+
+#servicos {
+  background-color: #e8cfc1;
+}
+.servicos {
+  height: 100%;
+  text-align: center;
+  margin: 20px auto;
+  max-width: 800px;
+}
+
+.carousel {
+  position: relative;
+  overflow: hidden;
+}
+
+.carousel-images {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+  min-width: 100%;
+  position: relative;
+}
+
+.slide img {
+  width: 50%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.slide p {
+  margin-top: 10px;
+  font-size: 16px;
+  color: #333;
+}
+
+button.prev, button.next {
+  z-index: 5;
+  position: absolute;
+  top: 40%;
+  transform: translateY(-50%);
+  background: rgba(0,0,0,0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+
+button.prev { left: 10px; }
+button.next { right: 10px; }
+
+.indicators {
+  position: absolute;
+  top: 15px;             
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2; 
+}
+
+.dot {
+  height: 12px;
+  width: 12px;
+  margin: 0 5px;
+  background: rgba(255,255,255,0.6); 
+  border-radius: 50%;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.dot.active { 
+  background: white;
 }
