@@ -48,6 +48,14 @@ button {
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 
+.texto {
+  flex: 1;
+}
+
+.imagem {
+  flex: 1;
+}
+
 .home {
   display: flex;
   align-items: center;
@@ -55,16 +63,15 @@ button {
   padding: 60px;
   gap: 40px;
 }
-
-.home-texto {
-  flex: 1;
+.sobre {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 60px;
+  gap: 40px;
 }
 
-.home-imagem {
-  flex: 1;
-}
-
-.home-imagem img {
+.imagem img {
   width: 50%;
   border-radius: 20px;
 }
@@ -141,4 +148,27 @@ button.next { right: 10px; }
 
 .dot.active { 
   background: white;
+}
+
+#contato {
+  background-color: #e8cfc1;
+  display: flex;
+}
+
+.map-container {
+  flex: 1;
+  position: relative;
+  width: 400px;
+  height: 500px;
+  overflow: hidden;
+}
+
+.map-container iframe {
+  flex: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 5%;
+  width: 80%;
+  height: 80%;
 }
