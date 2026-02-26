@@ -153,22 +153,62 @@ button.next { right: 10px; }
 #contato {
   background-color: #e8cfc1;
   display: flex;
+  justify-content: center;   /* Centraliza horizontalmente */
+  align-items: flex-start;   /* Alinha pelo topo */
+  gap: 40px;                 /* Espaço entre mapa e contatos */
+  padding: 20px;
+  width: 100%;
+  height: 300px;
 }
 
 .map-container {
   flex: 1;
-  position: relative;
-  width: 400px;
-  height: 500px;
-  overflow: hidden;
 }
 
 .map-container iframe {
+  width: 100%;
+  height: 200px;
+  border-radius: 8px;
+}
+
+.contato {
   flex: 1;
-  position: absolute;
-  top: 0;
-  left: 0;
-  margin: 5%;
-  width: 80%;
-  height: 80%;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+}
+
+.contato h2 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.contato a {
+  text-decoration: none;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 24px;
+  border-radius: 8px;
+  color: white;
+  font-size: 16px;
+  font-weight: 500;
+  margin: 10px;
+  transition: all 0.3s ease;
+}
+
+.btn.whatsapp {
+  background-color: #25D366;
+}
+
+.btn.instagram {
+  background-color: #E1306C;
+}
+
+.btn:hover {
+  opacity: 0.9; 
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
 }
