@@ -4,6 +4,7 @@ html {
 
 body {
   margin: 0;
+  padding-top: 120px; 
   font-family: Arial, sans-serif;
   background-color: #f8f4f2;
   color: #333;
@@ -11,8 +12,19 @@ body {
 }
 
 header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  transition: all 0.3s ease;
   background-color: #e8cfc1;
-  padding: 20px;
+  padding: 10px;
+}
+
+header.scrolled {
+  background-color: rgba(232, 207, 193, 0.95);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  padding: 15px;
 }
 
 nav a {
@@ -63,6 +75,7 @@ button {
   padding: 60px;
   gap: 40px;
 }
+
 .sobre {
   display: flex;
   align-items: center;
@@ -153,9 +166,9 @@ button.next { right: 10px; }
 #contato {
   background-color: #e8cfc1;
   display: flex;
-  justify-content: center;   /* Centraliza horizontalmente */
-  align-items: flex-start;   /* Alinha pelo topo */
-  gap: 40px;                 /* Espaço entre mapa e contatos */
+  justify-content: center;   
+  align-items: flex-start;   
+  gap: 40px;                 
   padding: 20px;
   width: 100%;
   height: 300px;
@@ -211,4 +224,9 @@ button.next { right: 10px; }
   opacity: 0.9; 
   transform: scale(1.05);
   box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+nav a.active {
+  color: #b5838d;
+  border-bottom: 2px solid #b5838d;
 }
